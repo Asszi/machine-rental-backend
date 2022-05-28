@@ -9,5 +9,5 @@ public interface MachineTypeDao {
     List<MachineType> getAllMachineTypes();
     void createMachineType(MachineType machineType);
     void updateMachineType(MachineType machineType);
-    void deleteMachineType(MachineType machineType);
+    void deleteMachineType(int id);
 }

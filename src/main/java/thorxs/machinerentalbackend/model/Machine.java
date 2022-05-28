@@ -16,12 +16,12 @@ import javax.validation.constraints.NotNull;
 public class Machine {
     @NotNull
     private int id;
-    @NotBlank
-    private Brand brand;
+    @NotNull
+    private int brandId;
     @NotBlank
     private String name;
     @NotNull
-    private MachineType machineType;
+    private int machineTypeId;
     @Min(0)
     private double powerOutput;
     @Min(0)

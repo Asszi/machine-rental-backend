@@ -9,5 +9,5 @@ public interface BrandDao {
     List<Brand> getAllBrands();
     void createBrand(Brand brand);
     void updateBrand(Brand brand);
-    void deleteBrand(Brand brand);
+    void deleteBrand(int id);
 }

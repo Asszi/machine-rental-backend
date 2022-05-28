@@ -35,7 +35,7 @@ public class BrandServiceImpl implements BrandService {
     }
 
     @Override
-    public void deleteBrand(Brand brand) {
-        brandDao.deleteBrand(brand);
+    public void deleteBrand(int id) {
+        brandDao.deleteBrand(id);
     }
 }

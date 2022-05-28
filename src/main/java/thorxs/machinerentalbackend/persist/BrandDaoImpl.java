@@ -7,7 +7,7 @@ import thorxs.machinerentalbackend.model.Brand;
 import java.util.*;
 
 @Component
-public class BrandImpl implements BrandDao {
+public class BrandDaoImpl implements BrandDao {
     private Map<Integer, Brand> brandMap;
 
     @Autowired
@@ -25,7 +25,7 @@ public class BrandImpl implements BrandDao {
 
     @Override
     public List<Brand> getAllBrands() {
-        return new ArrayList<Brand>(brandMap.values());
+        return new ArrayList<>(brandMap.values());
     }
 
     @Override
@@ -41,7 +41,7 @@ public class BrandImpl implements BrandDao {
     }
 
     @Override
-    public void deleteBrand(Brand brand) {
-        brandMap.remove(brand.getId());
+    public void deleteBrand(int id) {
+        brandMap.remove(id);
     }
 }

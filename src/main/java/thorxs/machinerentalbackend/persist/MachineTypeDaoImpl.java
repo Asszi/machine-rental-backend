@@ -26,7 +26,7 @@ public class MachineTypeDaoImpl implements MachineTypeDao {
 
     @Override
     public List<MachineType> getAllMachineTypes() {
-        return new ArrayList<MachineType>(machineTypeMap.values());
+        return new ArrayList<>(machineTypeMap.values());
     }
 
     @Override
@@ -42,7 +42,7 @@ public class MachineTypeDaoImpl implements MachineTypeDao {
     }
 
     @Override
-    public void deleteMachineType(MachineType machineType) {
-        machineTypeMap.remove(machineType.getId());
+    public void deleteMachineType(int id) {
+        machineTypeMap.remove(id);
     }
 }

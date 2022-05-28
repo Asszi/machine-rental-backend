@@ -25,7 +25,7 @@ public class MachineTypeServiceImpl implements MachineTypeService {
     }
 
     @Override
-    public void createMachineType(MachineType machineType) {
+    public void createNewMachineType(MachineType machineType) {
         machineTypeDao.createMachineType(machineType);
     }
 
@@ -35,7 +35,7 @@ public class MachineTypeServiceImpl implements MachineTypeService {
     }
 
     @Override
-    public void deleteMachineType(MachineType machineType) {
-        machineTypeDao.deleteMachineType(machineType);
+    public void deleteMachineType(int id) {
+        machineTypeDao.deleteMachineType(id);
     }
 }

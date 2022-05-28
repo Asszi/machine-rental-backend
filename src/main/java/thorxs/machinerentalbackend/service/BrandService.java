@@ -9,5 +9,5 @@ public interface BrandService {
     Brand getBrand(int id);
     void createNewBrand(Brand brand);
     void modifyBrand(Brand brand);
-    void deleteBrand(Brand brand);
+    void deleteBrand(int id);
 }

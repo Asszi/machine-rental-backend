@@ -16,7 +16,7 @@ public class Transaction {
     @NotNull
     private int id;
     @NotNull
-    private Company company;
+    private int companyId;
     @NotNull
     private int value;
     @NotNull

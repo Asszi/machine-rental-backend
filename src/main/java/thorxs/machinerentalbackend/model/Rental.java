@@ -16,9 +16,9 @@ public class Rental {
     @NotNull
     private int id;
     @NotNull
-    private Company company;
+    private int companyId;
     @NotNull
-    private Machine machine;
+    private int machineId;
     @NotNull
     private LocalDateTime rentalStart;
     private LocalDateTime rentalEnd;

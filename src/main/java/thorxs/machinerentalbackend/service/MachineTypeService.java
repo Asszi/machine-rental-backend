@@ -7,7 +7,7 @@ import java.util.List;
 public interface MachineTypeService {
     List<MachineType> listMachineTypes();
     MachineType getMachineType(int id);
-    void createMachineType(MachineType machineType);
+    void createNewMachineType(MachineType machineType);
     void modifyMachineType(MachineType machineType);
-    void deleteMachineType(MachineType machineType);
+    void deleteMachineType(int id);
 }
