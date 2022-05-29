@@ -21,7 +21,6 @@ public class TransactionDaoImpl implements TransactionDao {
         transactionMap.put(2, new Transaction(2, 1, 40000, LocalDateTime.now()));
         transactionMap.put(3, new Transaction(3, 2, 20000, LocalDateTime.now()));
         transactionMap.put(4, new Transaction(4, 3, 20000, LocalDateTime.now()));
-
     }
 
     @Override
